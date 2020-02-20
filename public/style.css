@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+
+:root {
+  --primary-color: #607d8b;
+  --dark-primary-color: #455a64;
+  --light-primary-color: #cfd8dc;
+  --accent-color: #CDDC39;
+  --primary-text: #212121;
+  --secondary-text: #757575;
+  --divider-color: #bdbdbd;
+  --text-icon-color: #ffffff;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+body {
+  background-color: var(--primary-color);
+  font-family: 'Roboto', sans-serif;
+}
+
+header {
+  background-color: var(--light-primary-color);
+  padding: 32px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.links a {
+  font-size: 22px;
+  text-decoration: none;
+  color: var(--primary-text);
+  position: relative;
+}
+
+.links a.active {
+  font-weight: bold;
+}
+
+.links a + a {
+  margin-left: 32px;
+}
+
+.links a:hover {
+  font-weight: 700;
+}
+
+.links a::after {
+  content: "";
+  width: 0; /* importante comecar do 0 */
+  height: 3px;
+  background-color: var(--text-icon-color);
+  position: absolute; /* em relacao ao elemento pai (a) */
+  left: 0;
+  bottom: -4px;
+
+}
+
+.links a:hover::after {
+  width: 100%; /* ir para o 100% */
+  transition: width 400ms ease-out;
+}
+
+
+
