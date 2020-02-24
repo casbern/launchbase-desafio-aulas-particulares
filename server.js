@@ -6,10 +6,14 @@ const routes = require("./routes")
 const server = express()
 
 //* Usando Middleware
-server.use(routes)
+//! A ordem é afetada
+server.use(express.urlencoded({ extended: true })) //* responsável por fazer funcionar o body
 
 //* Mostrando arquivos estaticos com CSS
 server.use(express.static('public'))
+
+server.use(routes)
+
 
 //* Configurando Nunjucks
 server.set("view engine", "njk")
