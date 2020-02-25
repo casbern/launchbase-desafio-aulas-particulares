@@ -1,0 +1,22 @@
+{
+  "teachers": [
+    {
+      "avatar_url": "http://globo.com",
+      "name": "Camila",
+      "birth": "2001-01-01",
+      "scholarity": "master_degree",
+      "class_type": "online",
+      "services": "Matemática"
+    },
+    {
+      "id": 2,
+      "avatar_url": "http://globo.com",
+      "name": "Camila",
+      "birth": 978307200000,
+      "scholarity": "master_degree",
+      "class_type": "online",
+      "services": "Matemática",
+      "created_at": 1582651762510
+    }
+  ]
+}

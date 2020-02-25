@@ -1,9 +1,8 @@
 const express = require("express")
-const teachers = require("./teachers")
 const routes = express.Router() //! Vai ser responsavel pelas rotas
 
+const teachers = require("./teachers")
 
-module.exports = routes //! Vai exportar as rotas para o server.js
 
 routes.get("/", function(req, res) {
   return res.redirect("/teachers")
@@ -18,3 +17,6 @@ routes.get("/teachers/create", function(req, res) {
 })
 
 routes.post("/teachers", teachers.post)
+
+
+module.exports = routes //! Vai exportar as rotas para o server.js
