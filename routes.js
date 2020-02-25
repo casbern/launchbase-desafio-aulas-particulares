@@ -1,5 +1,7 @@
 const express = require("express")
+const teachers = require("./teachers")
 const routes = express.Router() //! Vai ser responsavel pelas rotas
+
 
 module.exports = routes //! Vai exportar as rotas para o server.js
 
@@ -15,13 +17,4 @@ routes.get("/teachers/create", function(req, res) {
   return res.render("teachers/create")
 })
 
-routes.post("/teachers", function(req, res) {
-  const keys = Object.keys(req.body)
-
-  for(key of keys) {
-    if(req.body[key] == "") {
-      return res.send("Please, fill all the gaps")
-    }
-  }
-  return res.send(req.body)
-})
+routes.post("/teachers", teachers.post)
