@@ -1,22 +1,24 @@
 {
   "teachers": [
     {
-      "avatar_url": "http://globo.com",
+      "id": 1,
+      "avatar_url": "http://google.com",
       "name": "Camila",
-      "birth": "2001-01-01",
+      "birth": 696902400000,
       "scholarity": "master_degree",
       "class_type": "online",
-      "services": "Matemática"
+      "services": "Matemática",
+      "created_at": 1582652104902
     },
     {
       "id": 2,
       "avatar_url": "http://globo.com",
-      "name": "Camila",
-      "birth": 978307200000,
-      "scholarity": "master_degree",
-      "class_type": "online",
-      "services": "Matemática",
-      "created_at": 1582651762510
+      "name": "Ramires",
+      "birth": 1264982400000,
+      "scholarity": "higher_education",
+      "class_type": "classroom",
+      "services": "Ciências",
+      "created_at": 1582915374236
     }
   ]
 }

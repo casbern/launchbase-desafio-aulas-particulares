@@ -150,22 +150,16 @@ input {
   font-weight: bold;
 }
 
-input[type="date"] {
-  font-weight: normal;
+input::placeholder,
+input[type="date"],
+select[type="select"] {
+  font-size: 16px;
+  font-weight: bold;
 }
 
 input[type="radio"] {
   width: initial;
   margin-right: 5px;
-}
-
-select[type="select"] {
-  font-size: 16px;
-}
-
-input::placeholder {
-  font-size: 16px;
-  font-weight: normal;
 }
 
 button[type="submit"] {
