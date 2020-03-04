@@ -13,7 +13,7 @@ routes.get("/teachers", function(req, res) {
 })
 
 routes.get("/teachers/create", function(req, res) {
-  return res.render("teachers/create")
+  return res.render("teachers/create.njk")
 })
 
 routes.get("/teachers/:id", teachers.show)
