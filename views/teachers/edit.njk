@@ -2,7 +2,9 @@
 
 {% block content %}
 
-<form class="card" method="POST" action="/teachers">
+<div class="card">
+
+<form  method="POST" action="/teachers?_method=PUT">
   <section class="avatar"></section>
 
   <section class="details">
@@ -11,11 +13,20 @@
 
   {% include "teachers/fields.njk" %}
 
-  
+  <input type="hidden" name="id" value={{ teacher.id }}>
+
+
+</form>
+<form id="form-delete" method="post" action="/instructors?_method=DELETE">
+  <input type="hidden" name="id" value={{ teacher.id }}>
+  <button type="submit">Deletar</button>
+</form>
+
 
   </section>
-
   
 </form>
+
+</div>
 
 {% endblock content %}
