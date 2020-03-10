@@ -29,6 +29,16 @@
       "class_type": "classroom",
       "services": "matematica, ciencias, ingles",
       "created_at": 1583271178634
+    },
+    {
+      "id": 4,
+      "avatar_url": "http://google.com",
+      "name": "Arthur",
+      "birth": 1109980800000,
+      "scholarity": "master_degree",
+      "class_type": "online",
+      "services": "Matemática",
+      "created_at": 1583860230726
     }
   ]
 }
