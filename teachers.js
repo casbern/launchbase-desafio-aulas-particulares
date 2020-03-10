@@ -110,3 +110,37 @@ exports.edit = function (req, res) {
     }
   })
 }
+
+//atualizar
+exports.put = function (req, res) {
+
+  const {
+    id
+  } = req.params
+  let index = 0
+
+  const foundTeacher = data.teachers.find(function (teacher, foundIndex) {
+    if (id == teacher.id) {
+      index = foundIndex
+      return true
+    }
+  })
+
+  if (!foundTeacher) {
+    return res.send("Teacher was not found!")
+  }
+
+  const teacher = {
+    ...foundTeacher,
+    ...req.body,
+    birth: Date.parse(req.body.birth)
+  }
+
+  data.teachers[index] = teacher
+
+  fs.writeFile("data.json", JSON.stringify(data, null, 2), function(err) {
+    return res.redirect("/instructors/${id}")
+  })
+
+  return res.send("hi")
+}

@@ -23,5 +23,7 @@ routes.post("/teachers", teachers.post)
 
 routes.get("/teachers/:id/edit", teachers.edit)
 
+routes.put("/teachers", teachers.put)
+
 
 module.exports = routes //! Vai exportar as rotas para o server.js
