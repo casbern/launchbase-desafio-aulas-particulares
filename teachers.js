@@ -116,7 +116,7 @@ exports.put = function (req, res) {
 
   const {
     id
-  } = req.params
+  } = req.body
   let index = 0
 
   const foundTeacher = data.teachers.find(function (teacher, foundIndex) {
@@ -133,14 +133,15 @@ exports.put = function (req, res) {
   const teacher = {
     ...foundTeacher,
     ...req.body,
-    birth: Date.parse(req.body.birth)
+    birth: Date.parse(req.body.birth),
+    id: Number(req.body.id)
   }
 
   data.teachers[index] = teacher
 
   fs.writeFile("data.json", JSON.stringify(data, null, 2), function(err) {
-    return res.redirect("/instructors/${id}")
-  })
+    if(err) return res.send("Write error!")
 
-  return res.send("hi")
+    return res.redirect(`/instructors/${id}`)
+  })
 }
