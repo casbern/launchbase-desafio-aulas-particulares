@@ -2,48 +2,27 @@
 
 {% block content %}
 
-<div class="card">
-  <section class="avatar"></section>
+<div class="card table-container">
+  <table>
+  <thead>
+  <tr>
+  <th>Nome Completo</th>
+  <th>Acompanhamento</th>
+  <th>Ação</th>
+  </tr>
+  </thead>
 
-  <section class="details">
-
-  <h3>detalhes</h3>
-
-  <div class="item">
-    <div>Nome</div>
-    <div>Marcos</div>
-  </div>
-
-  <div class="item">
-    <div>Idade</div>
-    <div>29</div>
-  </div>
-
-  <div class="item">
-    <div>Grau de escolaridade</div>
-    <div>Mestrado</div>
-  </div>
-
-  <div class="item">
-    <div>Tipo de aula</div>
-    <div>Online</div>
-  </div>
-
-  <div class="item">
-    <div>Acompanhamento</div>
-    <div>
-    <span>Português</span>
-    <span>Inglês</span>
-    </div>
-  </div>
-
-  <div class="item">
-    <div>Desde</div>
-    <div>21/02/2020</div>
-  </div>
-
-  </section>
-
+  <tbody>
+  {% for teacher in teachers %}
+  <tr>
+  <td><span style="background-image: url({{teacher.avatar_url}})"></span></td>
+  <td>{{ teacher.name }}</td>
+  <td>{{ teacher.services }}</td>
+  <td><a href="/teachers/{{teacher.id}}">Ver</a></td>
+  </tr>
+  {% endfor %}
+  </tbody>
+  </table>
   
 </div>
 

@@ -167,17 +167,63 @@ button[type="submit"],
   padding: 8px 16px;
   background-color: var(--accent-color);
   border-radius: 4px;
-  width: 100%;
   font-weight: bold;
   margin-top: 32px;
   font-size: 16px;
   text-transform: uppercase;
+  width: 100%;
+  display: block;
 }
 
 a.button {
   text-decoration: none;
-  display: block;
   box-sizing: border-box;
   color: var(--primary-text);
   text-align: center;
+}
+
+#form-delete button[type="submit"] {
+  margin-top: 8px;
+  background-color: coral;
+}
+
+/* INDEX TEACHERS */
+.table-container {
+  display: block; /*take the grid out*/
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.table-container table {
+  border-spacing: 0;
+  width: 100%;
+}
+
+.table-container thead tr th {
+  text-align: left;
+}
+
+td, th {
+  padding: 16px;
+  border-bottom: 1px solid var(--divider-color);
+}
+
+tbody tr:last-child td {
+  border-bottom: none;
+}
+
+tbody tr td:first-child {
+  display: grid;
+  grid-template-columns: 64px;
+  align-items: center;
+}
+
+tbody tr td:first-child span {
+  width: 48px;
+  height: 48px;
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+  box-shadow: 3px 1px 6px -4px black;
+  border: 2px solid white;
 }

@@ -3,13 +3,13 @@
 {% block content %}
 
 <div class="card">
-
-<form  method="POST" action="/teachers?_method=PUT">
   <section class="avatar"></section>
 
   <section class="details">
+<form  method="POST" action="/teachers?_method=PUT">
 
-  <h3>detalhes</h3>
+
+  <h3>Editar Professor</h3>
 
   {% include "teachers/fields.njk" %}
 
@@ -17,7 +17,7 @@
 
 
 </form>
-<form id="form-delete" method="post" action="/instructors?_method=DELETE">
+<form id="form-delete" method="post" action="/teachers?_method=DELETE">
   <input type="hidden" name="id" value={{ teacher.id }}>
   <button type="submit">Deletar</button>
 </form>
