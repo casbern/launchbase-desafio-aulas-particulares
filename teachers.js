@@ -59,18 +59,28 @@ exports.edit = function (req, res) {
 
   const teacher = {
     ...foundTeacher,
-    birth: date(foundTeacher.birth).iso
-  }
+    birth: date(foundTeacher.birth).iso,
+    scholarity: console.log(foundScholarity(foundTeacher))   
+}
 
-  return res.render("teachers/edit", {
-    teacher,
-    options: {
-      high_school: "Ensino Médio Completo",
-      higher_education: "Ensino Superior Completo",
-      master_degree: "Mestrado",
-      doctorate_degree: "Doutorado"
+function foundScholarity(foundTeacher) {
+  const scholarity = foundTeacher.scholarity
+
+  let scholarityOptions = {
+    high_school: "Ensino Médio Completo",
+    higher_education: "Ensino Superior Completo",
+    master_degree: "Mestrado",
+    doctorate_degree: "Doutorado"
+  } 
+
+  for (key in scholarityOptions) {
+    if (key == scholarity) {
+      return scholarityOptions[key]
     }
-  })
+  }
+}
+
+  return res.render("teachers/edit", { teacher })
 }
 
 //create
