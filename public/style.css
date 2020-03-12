@@ -200,12 +200,15 @@ a.button {
 }
 
 .table-container thead tr th {
-  text-align: left;
+  text-transform: uppercase;
+  color: #777;
+  font-size: 14px;
 }
 
 td, th {
   padding: 16px;
   border-bottom: 1px solid var(--divider-color);
+  text-align: center;
 }
 
 tbody tr:last-child td {
@@ -214,16 +217,26 @@ tbody tr:last-child td {
 
 tbody tr td:first-child {
   display: grid;
-  grid-template-columns: 64px;
+  grid-template-columns: 40px 1fr; 
   align-items: center;
 }
 
 tbody tr td:first-child span {
-  width: 48px;
-  height: 48px;
+  width: 40px;
+  height: 40px;
   background-position: center;
   background-size: cover;
   border-radius: 50%;
   box-shadow: 3px 1px 6px -4px black;
   border: 2px solid white;
+}
+
+tbody tr td:last-child a {
+  background-color: var(--accent-color);
+  padding: 8px 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--dark-primary-color);
+  font-size: 12px;
+  border-radius: 4px;
 }
