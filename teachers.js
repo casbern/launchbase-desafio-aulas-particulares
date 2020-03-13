@@ -61,7 +61,13 @@ exports.edit = function (req, res) {
     birth: date(foundTeacher.birth).iso,
   }
   
-  return res.render("teachers/edit", { teacher })
+  return res.render("teachers/edit", { teacher,
+    options: {
+      high_school: "Ensino Médio Completo",
+      higher_education: "Ensino Superior Completo",
+      master_degree: "Mestrado",
+      doctorate_degree: "Doutorado"
+    } })
 }
 
 //create
