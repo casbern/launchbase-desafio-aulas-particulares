@@ -66,7 +66,7 @@ exports.edit = function (req, res) {
 
 //create
 exports.post = function (req, res) {
-  const keys = Object.keys(req.body)
+  const keys = Object.keys(req.body) //it will be an array of the keys of the object
 
   //* Checando se todos os campos estão preenchidos
   for (key of keys) {
@@ -87,7 +87,14 @@ exports.post = function (req, res) {
 
   birth = Date.parse(req.body.birth)
   const created_at = Date.now()
-  const id = Number(data.teachers.length + 1)
+  const lastTeacher = data.teachers[data.teachers.length - 1]
+  let id
+
+  if (lastTeacher) {
+    id = lastTeacher.id + 1
+  } else {
+    id = 1
+  }
 
   data.teachers.push({
     id,
