@@ -16,10 +16,10 @@
   <div class="item">
     <div>Grau de escolaridade</div>
     <select type="select" name="scholarity">
-      <option value="high_school">Ensino Médio Completo</option>
-      <option value="higher_education">Ensino Superior Completo</option>
-      <option value="master_degree" selected>Mestrado</option>
-      <option value="doctorate_degree">Doutorado</option>
+      <option value="high_school" {% if teacher.scholarity == "high_school" %}selected{%endif%}>Ensino Médio Completo</option>
+      <option value="higher_education" {% if teacher.scholarity == "higher_education" %}selected{%endif%}>Ensino Superior Completo</option>
+      <option value="master_degree" {% if teacher.scholarity == "master_degree" %}selected{%endif%}>Mestrado</option>
+      <option value="doctorate_degree" {% if teacher.scholarity == "doctorate_degree" %}selected{%endif%}>Doutorado</option>
     </select>
   </div>
 
