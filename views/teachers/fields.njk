@@ -16,8 +16,10 @@
   <div class="item">
     <div>Grau de escolaridade</div>
     <select type="select" name="scholarity">
-      {% for key in options %}
-      <option value="{{ key }}" >{{ options[key] }}</option>
+      {% for key,value in options %}
+      {% if key == teacher.scholarity %}selected {% else %}
+      <option value="{{ key }}">{{ value }}</option>
+      {%endif%}
       {% endfor %}
     </select>
   </div>
