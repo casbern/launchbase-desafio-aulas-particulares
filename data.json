@@ -4,8 +4,8 @@
       "id": 3,
       "avatar_url": "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1309&q=80",
       "name": "bruna",
-      "birth": 1084492800000,
-      "scholarity": "higher_education",
+      "birth": 1085011200000,
+      "scholarity": "master_degree",
       "class_type": "classroom",
       "services": "ciencias",
       "created_at": 1584127186426
@@ -29,6 +29,16 @@
       "class_type": "classroom",
       "services": "Computação",
       "created_at": 1584128163520
+    },
+    {
+      "id": 6,
+      "avatar_url": "http://gmail.com",
+      "name": "Adrian",
+      "birth": -5718211200000,
+      "scholarity": "master_degree",
+      "class_type": "classroom",
+      "services": "computação",
+      "created_at": 1584143912239
     }
   ]
 }

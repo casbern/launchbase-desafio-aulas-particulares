@@ -8,7 +8,13 @@ exports.index = function(req, res) {
 }
 
 exports.create = function(req, res) {
-  return res.render("teachers/create.njk")
+  return res.render("teachers/create", 
+  { options: {
+    high_school: "Ensino Médio Completo",
+    higher_education: "Ensino Superior Completo",
+    master_degree: "Mestrado",
+    doctorate_degree: "Doutorado"  
+  } })
 }
 
 //show
