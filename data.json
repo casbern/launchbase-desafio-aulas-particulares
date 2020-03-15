@@ -3,8 +3,8 @@
     {
       "id": 3,
       "avatar_url": "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1309&q=80",
-      "name": "bruna",
-      "birth": 1085097600000,
+      "name": "bruna silva e silva",
+      "birth": 1085443200000,
       "scholarity": "master_degree",
       "class_type": "classroom",
       "services": "ciencias",
@@ -41,8 +41,5 @@
       "created_at": 1584143912239
     }
   ],
-  
-  "students": [
-
-  ]
+  "students": []
 }
