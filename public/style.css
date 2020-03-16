@@ -206,6 +206,11 @@ a.button {
   font-size: 14px;
 }
 
+.table-container > a {
+  margin-bottom: 16px;
+  display: inline-block;
+}
+
 td, th {
   padding: 16px;
   border-bottom: 1px solid var(--divider-color);
@@ -232,7 +237,7 @@ tbody tr td:first-child span {
   border: 2px solid white;
 }
 
-tbody tr td:last-child a {
+tbody tr td:last-child a, .table-container > a {
   background-color: var(--accent-color);
   padding: 8px 16px;
   text-decoration: none;
