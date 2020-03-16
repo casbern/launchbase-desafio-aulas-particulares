@@ -4,7 +4,7 @@
       "id": 3,
       "avatar_url": "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1309&q=80",
       "name": "bruna silva e silva",
-      "birth": 1085443200000,
+      "birth": 1085529600000,
       "scholarity": "master_degree",
       "class_type": "classroom",
       "services": "ciencias",
@@ -35,7 +35,7 @@
     {
       "id": 1,
       "avatar_url": "https://images.unsplash.com/photo-1537072087284-b53024c3f332?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
-      "name": "Pauka",
+      "name": "Paula Mendes",
       "email": "paula.hot@gmail.com",
       "birth": 796694400000,
       "school_year": "seventh_year",
@@ -48,6 +48,15 @@
       "email": "gati@gmail.com",
       "birth": 946771200000,
       "school_year": "fifth_year",
+      "total_hours": "150"
+    },
+    {
+      "id": 3,
+      "avatar_url": "https://images.unsplash.com/photo-1509869175650-a1d97972541a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
+      "name": "Camila Souza",
+      "email": "cah@gmail.com",
+      "birth": 824860800000,
+      "school_year": "second_year",
       "total_hours": "150"
     }
   ]
