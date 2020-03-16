@@ -11,16 +11,6 @@
       "created_at": 1584127186426
     },
     {
-      "id": 4,
-      "avatar_url": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80",
-      "name": "Eduardo",
-      "birth": 900374400000,
-      "scholarity": "doctorate_degree",
-      "class_type": "online",
-      "services": "Ingles",
-      "created_at": 1584127236933
-    },
-    {
       "id": 5,
       "avatar_url": "https://images.unsplash.com/photo-1555436169-20e93ea9a7ff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80",
       "name": "Luciano",
@@ -31,14 +21,14 @@
       "created_at": 1584128163520
     },
     {
-      "id": 6,
-      "avatar_url": "https://images.unsplash.com/photo-1553941884-f8947df6e0ba?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=664&q=80",
-      "name": "Adrian",
-      "birth": 593568000000,
-      "scholarity": "master_degree",
-      "class_type": "classroom",
-      "services": "computação",
-      "created_at": 1584143912239
+      "id": 7,
+      "avatar_url": "https://images.unsplash.com/photo-1518463892881-d587bf2c296a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60",
+      "name": "Amanda",
+      "birth": 895276800000,
+      "scholarity": "high_school",
+      "class_type": "online",
+      "services": "Línguas",
+      "created_at": 1584383464476
     }
   ],
   "students": []
