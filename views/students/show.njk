@@ -3,7 +3,7 @@
 {% block content %}
 
 <div class="card">
-  <section class="avatar" style="background-image: url({{teacher.avatar_url}})"></section>
+  <section class="avatar" style="background-image: url({{student.avatar_url}})"></section>
 
   <section class="details">
 
@@ -11,46 +11,35 @@
 
   {# <div class="item">
     <div>Avatar</div>
-    <div>{{teacher.avatar_url}}</div>
+    <div>{{student.avatar_url}}</div>
   </div> #}
 
   <div class="item">
     <div>Nome</div>
-    <div>{{teacher.name}}</div>
+    <div>{{student.name}}</div>
   </div>
 
   <div class="item">
-    <div>Idade</div>
-    <div>{{teacher.age}}</div>
+    <div>Email</div>
+    <div>{{student.email}}</div>
   </div>
 
   <div class="item">
-    <div>Grau de escolaridade</div>
-    <div>{{options[teacher.scholarity]}}</div>
+    <div>Aniversário</div>
+    <div>{{ student.birth }}</div>
   </div>
 
   <div class="item">
-    <div>Tipo de aula</div>
-    <div>{{"Distância" if teacher.class_type == "online" else "Presencial"}}</div>
+    <div>Ano Escolar</div>
+    <div>{{ options[student.school_year] }}</div>
   </div>
 
   <div class="item">
-    <div>Acompanhamento</div>
-    <div>
-    {% for service in teacher.services %}
-    <span>
-    {{service}}
-    </span>
-    {% endfor %}
-    </div>
+    <div>Carga Horária Semanal</div>
+    <div>{{ student.total_hours }}</div>
   </div>
 
-  <div class="item">
-    <div>Desde</div>
-    <div>{{teacher.created_at}}</div>
-  </div>
-
-  <a href="/teachers/{{ teacher.id }}/edit" class="button">EDITAR</a>
+  <a href="/students/{{ student.id }}/edit" class="button">EDITAR</a>
 
   </section>
 

@@ -24,12 +24,31 @@
       "id": 7,
       "avatar_url": "https://images.unsplash.com/photo-1518463892881-d587bf2c296a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60",
       "name": "Amanda",
-      "birth": 895276800000,
+      "birth": 883612800000,
       "scholarity": "high_school",
       "class_type": "online",
       "services": "Línguas",
       "created_at": 1584383464476
     }
   ],
-  "students": []
+  "students": [
+    {
+      "id": 1,
+      "avatar_url": "https://images.unsplash.com/photo-1537072087284-b53024c3f332?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
+      "name": "Pauka",
+      "email": "paula.hot@gmail.com",
+      "birth": 796694400000,
+      "school_year": "seventh_year",
+      "total_hours": "50"
+    },
+    {
+      "id": 2,
+      "avatar_url": "https://images.unsplash.com/photo-1580582932707-520aed937b7b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1189&q=80",
+      "name": "Adrian Matushi",
+      "email": "gati@gmail.com",
+      "birth": 946771200000,
+      "school_year": "fifth_year",
+      "total_hours": "150"
+    }
+  ]
 }
