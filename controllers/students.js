@@ -1,6 +1,6 @@
 const fs = require("fs")
 const data = require("../data.json")
-const { age, date } = require('../utils')
+const { age, date, grade } = require('../utils')
 const Intl = require("intl") 
 
 exports.index = function(req, res) {
@@ -131,18 +131,20 @@ exports.show = function (req, res) {
     birth: date(foundStudent.birth).birthDay,
   }
 
-  return res.render("students/show", {
+
+
+  return res.render("students/show", { 
     student,
     options: {
-    fifth_year: "5º ano do ensino fundamental",
-    sixth_year: "6º ano do ensino fundamental",
-    seventh_year: "7º ano do ensino fundamental",
-    eigth_year: "8º ano do ensino fundamental",
-    nineth_year: "9º ano do ensino fundamental",
-    first_year: "1º ano do ensino médio",
-    second_year: "2º ano do ensino médio",
-    third_year: "3º ano do ensino médio"
-    }
+      fifth_year: "5º ano do ensino fundamental",
+      sixth_year: "6º ano do ensino fundamental",
+      seventh_year: "7º ano do ensino fundamental",
+      eigth_year: "8º ano do ensino fundamental",
+      nineth_year: "9º ano do ensino fundamental",
+      first_year: "1º ano do ensino médio",
+      second_year: "2º ano do ensino médio",
+      third_year: "3º ano do ensino médio" 
+    } 
   })
 }
 
