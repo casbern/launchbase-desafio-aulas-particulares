@@ -22,6 +22,17 @@ module.exports = {
       iso: `${year}-${month}-${day}`,
       birthDay: `${day}/${month}`
     }
+  },
+  grade: function(schoolYear) {
+    const [year, notNeeded, letter] = schoolYear.split("")
+  
+      if(letter == "F") {
+        return `${year}º Ano do Ensino Fundamental`
+      } else if (letter == "M") {
+        return `${year}º Ano do Ensino Médio`
+      } else {
+        return false
+      }
   }
 }
 

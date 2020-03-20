@@ -18,8 +18,17 @@
       "name": "Pamela",
       "email": "pami@gmail.com",
       "birth": 797904000000,
-      "school_year": "eigth_year",
+      "school_year": "2EM",
       "total_hours": "85"
+    },
+    {
+      "id": 2,
+      "avatar_url": "https://images.theconversation.com/files/193721/original/file-20171108-6766-udash5.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=926&fit=clip",
+      "name": "Apolinario",
+      "email": "apo@gmail.com",
+      "birth": 570758400000,
+      "school_year": "9EF",
+      "total_hours": "450"
     }
   ]
 }

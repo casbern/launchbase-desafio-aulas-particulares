@@ -4,29 +4,31 @@ const { age, date, grade } = require('../utils')
 const Intl = require("intl") 
 
 exports.index = function(req, res) {
-  return res.render("students/index", { students: data.students, options: {
-    fifth_year: "5º ano do ensino fundamental",
-    sixth_year: "6º ano do ensino fundamental",
-    seventh_year: "7º ano do ensino fundamental",
-    eigth_year: "8º ano do ensino fundamental",
-    nineth_year: "9º ano do ensino fundamental",
-    first_year: "1º ano do ensino médio",
-    second_year: "2º ano do ensino médio",
-    third_year: "3º ano do ensino médio"
+  return res.render("students/index", { 
+    students: data.students, 
+    options: {
+    "5EF": "5º ano do ensino fundamental",
+    "6EF": "6º ano do ensino fundamental",
+    "7EF": "7º ano do ensino fundamental",
+    "8EF": "8º ano do ensino fundamental",
+    "9EF": "9º ano do ensino fundamental",
+    "1EM": "1º ano do ensino médio",
+    "2EM": "2º ano do ensino médio",
+    "3EM": "3º ano do ensino médio"
   } })
 }
 
 exports.create = function(req, res) {
   return res.render("students/create", 
   { options: {
-    fifth_year: "5º ano do ensino fundamental",
-    sixth_year: "6º ano do ensino fundamental",
-    seventh_year: "7º ano do ensino fundamental",
-    eigth_year: "8º ano do ensino fundamental",
-    nineth_year: "9º ano do ensino fundamental",
-    first_year: "1º ano do ensino médio",
-    second_year: "2º ano do ensino médio",
-    third_year: "3º ano do ensino médio"
+    "5EF": "5º ano do ensino fundamental",
+    "6EF": "6º ano do ensino fundamental",
+    "7EF": "7º ano do ensino fundamental",
+    "8EF": "8º ano do ensino fundamental",
+    "9EF": "9º ano do ensino fundamental",
+    "1EM": "1º ano do ensino médio",
+    "2EM": "2º ano do ensino médio",
+    "3EM": "3º ano do ensino médio"
   } })
 }
 
@@ -102,14 +104,14 @@ exports.edit = function (req, res) {
   
   return res.render("students/edit", { student,
     options: {
-    fifth_year: "5º ano do ensino fundamental",
-    sixth_year: "6º ano do ensino fundamental",
-    seventh_year: "7º ano do ensino fundamental",
-    eigth_year: "8º ano do ensino fundamental",
-    nineth_year: "9º ano do ensino fundamental",
-    first_year: "1º ano do ensino médio",
-    second_year: "2º ano do ensino médio",
-    third_year: "3º ano do ensino médio"
+      "5EF": "5º ano do ensino fundamental",
+      "6EF": "6º ano do ensino fundamental",
+      "7EF": "7º ano do ensino fundamental",
+      "8EF": "8º ano do ensino fundamental",
+      "9EF": "9º ano do ensino fundamental",
+      "1EM": "1º ano do ensino médio",
+      "2EM": "2º ano do ensino médio",
+      "3EM": "3º ano do ensino médio"
     } })
 }
 
@@ -129,23 +131,10 @@ exports.show = function (req, res) {
   const student = {
     ...foundStudent,
     birth: date(foundStudent.birth).birthDay,
+    school_year: grade(foundStudent.school_year)
   }
 
-
-
-  return res.render("students/show", { 
-    student,
-    options: {
-      fifth_year: "5º ano do ensino fundamental",
-      sixth_year: "6º ano do ensino fundamental",
-      seventh_year: "7º ano do ensino fundamental",
-      eigth_year: "8º ano do ensino fundamental",
-      nineth_year: "9º ano do ensino fundamental",
-      first_year: "1º ano do ensino médio",
-      second_year: "2º ano do ensino médio",
-      third_year: "3º ano do ensino médio" 
-    } 
-  })
+  return res.render("students/show", { student })
 }
 
 //atualizar
